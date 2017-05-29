@@ -1,3 +1,7 @@
+blog_post:
+    resource: "@BlogBundle/Controller/PostController.php"
+    type:     annotation
+
 blog:
     resource: "@BlogBundle/Resources/config/routing.yml"
     prefix:   /

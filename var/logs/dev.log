@@ -3,3 +3,5 @@
 [2017-05-29 15:49:21] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
 [2017-05-29 15:49:58] request.INFO: Matched route "blog_homepage". {"route":"blog_homepage","route_parameters":{"_controller":"BlogBundle\\Controller\\DefaultController::indexAction","_route":"blog_homepage"},"request_uri":"http://localhost:8000/","method":"GET"} []
 [2017-05-29 15:49:58] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+[2017-05-29 16:57:02] request.INFO: Matched route "blog_homepage". {"route":"blog_homepage","route_parameters":{"_controller":"BlogBundle\\Controller\\DefaultController::indexAction","_route":"blog_homepage"},"request_uri":"http://localhost:8000/","method":"GET"} []
+[2017-05-29 16:57:02] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
