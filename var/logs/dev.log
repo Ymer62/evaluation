@@ -1,0 +1,1 @@
+[2017-05-29 10:34:23] php.DEBUG: Warning: fsockopen(): unable to connect to 127.0.0.1:8000 (Connection refused) {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\SilencedErrorContext: {\"severity\":2,\"file\":\"/var/www/html/evaluation/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Command/ServerCommand.php\",\"line\":61})"} []
