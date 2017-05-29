@@ -1,1 +1,5 @@
 [2017-05-29 10:34:23] php.DEBUG: Warning: fsockopen(): unable to connect to 127.0.0.1:8000 (Connection refused) {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\SilencedErrorContext: {\"severity\":2,\"file\":\"/var/www/html/evaluation/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Command/ServerCommand.php\",\"line\":61})"} []
+[2017-05-29 15:49:21] request.INFO: Matched route "blog_homepage". {"route":"blog_homepage","route_parameters":{"_controller":"BlogBundle\\Controller\\DefaultController::indexAction","_route":"blog_homepage"},"request_uri":"http://localhost:8000/","method":"GET"} []
+[2017-05-29 15:49:21] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+[2017-05-29 15:49:58] request.INFO: Matched route "blog_homepage". {"route":"blog_homepage","route_parameters":{"_controller":"BlogBundle\\Controller\\DefaultController::indexAction","_route":"blog_homepage"},"request_uri":"http://localhost:8000/","method":"GET"} []
+[2017-05-29 15:49:58] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
