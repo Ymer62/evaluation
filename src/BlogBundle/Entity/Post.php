@@ -36,9 +36,16 @@ class Post
     private $img;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="titre", type="string", length=255, nullable=false)
+     */
+    private $title;
+
+    /**
      * @var int
      *
-     * @ORM\Column(name="user_id", type="integer", unique=true)
+     * @ORM\Column(name="user_id", type="integer", unique=true, nullable=true)
      */
     private $userId;
 
@@ -76,6 +83,31 @@ class Post
     {
         return $this->text;
     }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     *
+     * @return Post
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
 
     /**
      * Set img
@@ -125,4 +157,3 @@ class Post
         return $this->userId;
     }
 }
-

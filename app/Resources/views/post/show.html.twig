@@ -1,48 +1,30 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Post</h1>
+<div class="container">
+<div class="row">
 
-    <table>
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ post.id }}</td>
-            </tr>
-            <tr>
-                <th>Userid</th>
-                <td>{{ post.userId }}</td>
-            </tr>
-            <tr>
-                <th>Img</th>
-                <td>{{ post.img }}</td>
-            </tr>
-            <tr>
-                <th>Text</th>
-                <td>{{ post.text }}</td>
-            </tr>
-            <tr>
-                <th>Modified</th>
-                <td>{% if post.modified %}{{ post.modified|date('Y-m-d H:i:s') }}{% endif %}</td>
-            </tr>
-            <tr>
-                <th>Created</th>
-                <td>{% if post.created %}{{ post.created|date('Y-m-d H:i:s') }}{% endif %}</td>
-            </tr>
-        </tbody>
-    </table>
+  <div class="well col-md-12">
+    <h2>{{ post.title }}</h2>
 
-    <ul>
-        <li>
-            <a href="{{ path('post_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <a href="{{ path('post_edit', { 'id': post.id }) }}">Edit</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+    <img src="{{ post.img }}" alt="" />
+
+    <p>{{ post.text }}</p>
+
+    <a class="col-md-12" href="{{ path('post_index') }}"><input type="submit" value="Retour"> </a>
+
+    <a class="col-md-12" href="{{ path('post_edit', { 'id': post.id }) }}"> <input type="submit" value="Modifier"></a>
+
+
+    {{ form_start(delete_form) }}
+    <input type="submit" value="Supprimer">
+    {{ form_end(delete_form) }}
+
+</div>
+</div>
+
+</div>
+
+
+
 {% endblock %}
