@@ -1,3 +1,7 @@
+blog_user:
+    resource: "@BlogBundle/Controller/userController.php"
+    type:     annotation
+
 blog_post:
     resource: "@BlogBundle/Controller/PostController.php"
     type:     annotation

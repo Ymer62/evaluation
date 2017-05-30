@@ -10,16 +10,24 @@
                 <td>{{ post.id }}</td>
             </tr>
             <tr>
-                <th>Text</th>
-                <td>{{ post.text }}</td>
+                <th>Userid</th>
+                <td>{{ post.userId }}</td>
             </tr>
             <tr>
                 <th>Img</th>
                 <td>{{ post.img }}</td>
             </tr>
             <tr>
-                <th>Userid</th>
-                <td>{{ post.userId }}</td>
+                <th>Text</th>
+                <td>{{ post.text }}</td>
+            </tr>
+            <tr>
+                <th>Modified</th>
+                <td>{% if post.modified %}{{ post.modified|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Created</th>
+                <td>{% if post.created %}{{ post.created|date('Y-m-d H:i:s') }}{% endif %}</td>
             </tr>
         </tbody>
     </table>
